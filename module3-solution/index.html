@@ -1,1 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>Bootstrap Starter Page</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-secondary border border-black border-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h1>Food, LLC</h1></a>
+          <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsable-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsable-nav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item d-block d-lg-none">
+                <a class="nav-link" aria-current="page" href="#">Chicken</a>
+              </li>
+              <li class="nav-item d-block d-lg-none">
+                <a class="nav-link" href="#">Beef</a>
+              </li>
+              <li class="nav-item d-block d-lg-none">
+                <a class="nav-link" aria-current="page" href="#">Sushi</a>
+              </li>
+            </ul>            
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <h2 class="text-center">Our Menu</h2>
+    <div class="container-fluid text-center">
+      <section class="bg-secondary">
+        <h3>Chicken</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit sagittis odio, sit amet dignissim nisl. Cras a metus in nisi ultricies tempus. Morbi ut ultrices enim. Maecenas aliquet sollicitudin turpis, vel blandit mi. Sed et odio est. Quisque non posuere justo. Cras vel eros nec felis vulputate ullamcorper. Quisque vel nunc vestibulum, lacinia nulla a, vehicula risus. Nulla nec dui et purus pretium euismod. Aenean tempor nisi id lorem pellentesque semper.</p>
+      </section>
+      <section class="bg-secondary">
+        <h3>Beef</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit sagittis odio, sit amet dignissim nisl. Cras a metus in nisi ultricies tempus. Morbi ut ultrices enim. Maecenas aliquet sollicitudin turpis, vel blandit mi. Sed et odio est. Quisque non posuere justo. Cras vel eros nec felis vulputate ullamcorper. Quisque vel nunc vestibulum, lacinia nulla a, vehicula risus. Nulla nec dui et purus pretium euismod. Aenean tempor nisi id lorem pellentesque semper.</p>
+      </section>
+      <section class="bg-secondary">
+        <h3>Sushi</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit sagittis odio, sit amet dignissim nisl. Cras a metus in nisi ultricies tempus. Morbi ut ultrices enim. Maecenas aliquet sollicitudin turpis, vel blandit mi. Sed et odio est. Quisque non posuere justo. Cras vel eros nec felis vulputate ullamcorper. Quisque vel nunc vestibulum, lacinia nulla a, vehicula risus. Nulla nec dui et purus pretium euismod. Aenean tempor nisi id lorem pellentesque semper.</p>
+      </section>
+    </div>
+
+  <!--Prevents navigation toggler from remaining highlighted-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var navbarToggler = document.querySelector('.navbar-toggler');
+        navbarToggler.addEventListener('click', function() {
+            setTimeout(function() {
+                navbarToggler.blur();
+            }, 100);
+        });
+    });
+  </script>
+</body>
+</html>
